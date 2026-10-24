@@ -1,4 +1,4 @@
-# Syed Abdul Aleem Ahmad Shah — Portfolio Website (v2, Professional + SEO)
+# Syed Abdul Aleem Ahmad Shah — Portfolio Website (v3, Editorial Professional Theme + SEO)
 
 Ye aap ki purani portfolio (syedabdulaleem.vercel.app) ka upgraded version hai — wahi tamam content, lekin zyada professional structure, mukammal SEO, aur 2 naye client projects ke sath.
 

@@ -1,75 +1,79 @@
 /* Syed Abdul Aleem Ahmad Shah — Portfolio interactions
-   Theme toggle · mobile menu · scroll progress · reveal on scroll · WhatsApp form */
+   Sticky header state · mobile menu · scroll progress ·
+   reveal on scroll (staggered) · back-to-top · WhatsApp form */
 (function () {
   "use strict";
 
-  /* Theme (saved preference, defaults to dark) */
-  var root = document.documentElement;
-  var toggle = document.getElementById("themeToggle");
-  try {
-    var saved = localStorage.getItem("theme");
-    if (saved) root.dataset.theme = saved;
-  } catch (e) { /* storage unavailable */ }
-  function syncIcon() { if (toggle) toggle.textContent = root.dataset.theme === "dark" ? "☀" : "☾"; }
-  syncIcon();
-  if (toggle) toggle.addEventListener("click", function () {
-    root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
-    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
-    syncIcon();
+  /* Footer year */
+  var year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  /* Sticky header shadow */
+  var header = document.getElementById("siteHeader");
+  var bar = document.getElementById("scrollProgress");
+  var toTop = document.getElementById("toTopFloat");
+  function onScroll() {
+    var y = window.scrollY || 0;
+    if (header) header.classList.toggle("scrolled", y > 8);
+    if (bar) {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (max > 0 ? (y / max) * 100 : 0) + "%";
+    }
+    if (toTop) toTop.classList.toggle("show", y > 700);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  if (toTop) toTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   /* Mobile menu */
-  var menuBtn = document.getElementById("menuToggle");
-  var navLinks = document.getElementById("navLinks");
-  if (menuBtn && navLinks) {
+  var menuBtn = document.getElementById("menuBtn");
+  var nav = document.getElementById("mainNav");
+  if (menuBtn && nav) {
     menuBtn.addEventListener("click", function () {
-      var open = navLinks.classList.toggle("open");
+      var open = nav.classList.toggle("open");
       menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
-      menuBtn.textContent = open ? "✕" : "☰";
+      menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     });
-    navLinks.addEventListener("click", function (ev) {
+    nav.addEventListener("click", function (ev) {
       if (ev.target.tagName === "A") {
-        navLinks.classList.remove("open");
+        nav.classList.remove("open");
         menuBtn.setAttribute("aria-expanded", "false");
-        menuBtn.textContent = "☰";
       }
     });
   }
 
-  /* Scroll progress bar */
-  var bar = document.getElementById("scrollProgress");
-  function onScroll() {
-    if (!bar) return;
-    var h = document.documentElement;
-    var max = h.scrollHeight - window.innerHeight;
-    bar.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + "%";
-  }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
-  /* Reveal on scroll */
-  var items = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
+  /* Reveal on scroll — with a gentle stagger for grouped items */
+  var items = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      var batch = entries.filter(function (e) { return e.isIntersecting; });
+      batch.forEach(function (en, i) {
+        en.target.style.transitionDelay = Math.min(i * 90, 360) + "ms";
+        en.target.classList.add("in");
+        io.unobserve(en.target);
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1, rootMargin: "0px 0px -6% 0px" });
     items.forEach(function (el) { io.observe(el); });
   } else {
     items.forEach(function (el) { el.classList.add("in"); });
   }
 
-  /* Contact form -> WhatsApp with prefilled message */
+  /* Contact form -> WhatsApp with a prefilled, human message */
   var form = document.getElementById("contactForm");
   if (form) form.addEventListener("submit", function (ev) {
     ev.preventDefault();
     var name = (form.elements.name.value || "").trim();
     var subject = (form.elements.subject.value || "").trim();
     var message = (form.elements.message.value || "").trim();
-    var text = "Assalam-o-Alaikum Aleem, I want to discuss a project.\n"
+    if (!subject || !message) {
+      (subject ? form.elements.message : form.elements.subject).focus();
+      return;
+    }
+    var text = "Assalam-o-Alaikum Aleem, I found your portfolio and I'd like to discuss a project.\n"
       + (name ? "Name: " + name + "\n" : "")
-      + (subject ? "Project: " + subject + "\n" : "")
+      + "What I need: " + subject + "\n"
       + message;
     window.open("https://wa.me/923295566111?text=" + encodeURIComponent(text), "_blank", "noopener");
   });
