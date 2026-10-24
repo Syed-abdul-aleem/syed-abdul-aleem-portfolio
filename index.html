@@ -1,24 +1,502 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#08090b" />
-    <meta name="description" content="Syed Abdul Aleem Ahmad Shah — AI Developer, Automation Specialist and Vibe Coder building practical digital products, workflows and AI-powered experiences." />
-    <meta property="og:title" content="Syed Abdul Aleem Ahmad Shah — AI Developer" />
-    <meta property="og:description" content="AI development, automation, vibe coding and practical digital products." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/profile.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Syed Abdul Aleem Ahmad Shah — AI Developer" />
-    <meta name="twitter:description" content="AI development, automation, vibe coding and practical digital products." />
-    <meta name="twitter:image" content="/profile.jpg" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
-    <title>SYED ABDUL ALEEM AHMAD SHAH — AI DEVELOPER</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===== Primary SEO ===== -->
+<title>Syed Abdul Aleem Ahmad Shah — AI Developer, Web Developer & Automation Specialist in Pakistan</title>
+<meta name="description" content="Syed Abdul Aleem Ahmad Shah — AI Developer, Automation Specialist & Web Developer from Pakistan. AI-powered websites, e-commerce, n8n automation. Hire me today." />
+<meta name="keywords" content="Syed Abdul Aleem Ahmad Shah, AI Developer Pakistan, Web Developer Pakistan, Automation Specialist, n8n Automation, Vibe Coding, Freelance Web Developer Pakistan, WooCommerce Developer, AI Integration, E-commerce Development Pakistan" />
+<meta name="author" content="Syed Abdul Aleem Ahmad Shah" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://syedabdulaleem.vercel.app/" />
+<meta name="geo.region" content="PK" />
+<meta name="geo.placename" content="Pakistan" />
+<meta name="theme-color" content="#08090b" />
+
+<!-- ===== Open Graph (Facebook / LinkedIn / WhatsApp sharing) ===== -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Syed Abdul Aleem Ahmad Shah — Portfolio" />
+<meta property="og:title" content="Syed Abdul Aleem Ahmad Shah — AI Developer & Automation Specialist" />
+<meta property="og:description" content="AI development, automation, vibe coding and practical digital products — built in Pakistan, shipped worldwide. Currently available for freelance work." />
+<meta property="og:url" content="https://syedabdulaleem.vercel.app/" />
+<meta property="og:image" content="https://syedabdulaleem.vercel.app/assets/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Syed Abdul Aleem Ahmad Shah — AI Developer" />
+<meta property="og:locale" content="en_US" />
+
+<!-- ===== Twitter / X ===== -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Syed Abdul Aleem Ahmad Shah — AI Developer & Automation Specialist" />
+<meta name="twitter:description" content="AI-powered websites, e-commerce, n8n automation and digital products. Available for freelance work — Pakistan." />
+<meta name="twitter:image" content="https://syedabdulaleem.vercel.app/assets/og-image.jpg" />
+
+<!-- ===== Icons ===== -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/assets/profile.jpg" />
+
+<!-- ===== Fonts (display=swap for speed) ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="/style.css" />
+
+<!-- ===== Structured Data: Person + Professional Service (Google rich results) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://syedabdulaleem.vercel.app/#person",
+      "name": "Syed Abdul Aleem Ahmad Shah",
+      "url": "https://syedabdulaleem.vercel.app/",
+      "image": "https://syedabdulaleem.vercel.app/assets/profile.jpg",
+      "jobTitle": "AI Developer, Web Developer & Automation Specialist",
+      "description": "Independent AI developer and automation specialist from Pakistan building AI-powered websites, e-commerce stores, n8n workflows and digital products.",
+      "email": "mailto:syedabdulaleem.ai@gmail.com",
+      "nationality": "Pakistani",
+      "address": { "@type": "PostalAddress", "addressCountry": "PK" },
+      "worksFor": { "@type": "Organization", "name": "Zewarly", "url": "https://www.zewarly.pk/" },
+      "sameAs": [
+        "https://www.linkedin.com/in/syed-abdul-aleem-ahmad-shah/",
+        "https://www.fiverr.com/syed_abdulaleem",
+        "https://www.upwork.com/freelancers/~01f0a36b29dbc41e22",
+        "https://www.zewarly.pk/"
+      ],
+      "knowsAbout": ["Artificial Intelligence", "Generative AI", "n8n Automation", "Web Development", "E-commerce Development", "WordPress", "WooCommerce", "AI Integration", "Vibe Coding", "Prompt Engineering"]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://syedabdulaleem.vercel.app/#service",
+      "name": "Syed Abdul Aleem Ahmad Shah — AI & Web Development Services",
+      "url": "https://syedabdulaleem.vercel.app/",
+      "image": "https://syedabdulaleem.vercel.app/assets/og-image.jpg",
+      "founder": { "@id": "https://syedabdulaleem.vercel.app/#person" },
+      "areaServed": "Worldwide",
+      "address": { "@type": "PostalAddress", "addressCountry": "PK" },
+      "email": "syedabdulaleem.ai@gmail.com",
+      "telephone": "+92-329-5566111",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.linkedin.com/in/syed-abdul-aleem-ahmad-shah/",
+        "https://www.fiverr.com/syed_abdulaleem",
+        "https://www.upwork.com/freelancers/~01f0a36b29dbc41e22"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://syedabdulaleem.vercel.app/#website",
+      "url": "https://syedabdulaleem.vercel.app/",
+      "name": "Syed Abdul Aleem Ahmad Shah — Portfolio",
+      "author": { "@id": "https://syedabdulaleem.vercel.app/#person" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://syedabdulaleem.vercel.app/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "What services does Syed Abdul Aleem Ahmad Shah offer?", "acceptedAnswer": { "@type": "Answer", "text": "AI-powered web development, full-stack websites, e-commerce stores (WordPress / WooCommerce), n8n automation workflows, AI integration and custom business solutions." } },
+        { "@type": "Question", "name": "Is Syed Abdul Aleem available for freelance work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. He is currently available for freelance projects worldwide and can be hired via WhatsApp (+92 329 5566111), Fiverr, Upwork, LinkedIn or email at syedabdulaleem.ai@gmail.com." } },
+        { "@type": "Question", "name": "Where is Syed Abdul Aleem based?", "acceptedAnswer": { "@type": "Answer", "text": "He is based in Pakistan and works remotely with clients locally and internationally." } },
+        { "@type": "Question", "name": "What technologies does he work with?", "acceptedAnswer": { "@type": "Answer", "text": "Generative AI and LLMs, n8n, HTML5, CSS3, JavaScript, WordPress, WooCommerce, Gemini AI, Meta APIs and Vercel — chosen per project around the outcome, not buzzwords." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#home" class="brand" aria-label="Syed Abdul Aleem — home">
+      <span class="brand-mark">SA</span><span>Syed Abdul Aleem</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-tools">
+      <a class="nav-cta" href="https://wa.me/923295566111?text=Assalam-o-Alaikum%20Aleem%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">Hire Me</a>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light / dark theme">☀</button>
+      <button class="icon-btn menu-btn" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main id="home">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <div class="eyebrow">AI DEVELOPER · AUTOMATION · VIBE CODING</div>
+        <div class="hero-name">SYED ABDUL ALEEM AHMAD SHAH</div>
+        <h1>BUILD IDEAS.<br /><span>MAKE THEM REAL.</span></h1>
+        <p class="lead">I build practical digital experiences with AI, automation and modern web technology — turning ideas into products, workflows and business solutions that are meant to ship.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/923295566111?text=Assalam-o-Alaikum%20Aleem%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">Hire Me on WhatsApp ↗</a>
+          <a class="btn btn-ghost" href="#work">Explore Work ↓</a>
+        </div>
+        <p class="status"><i></i> CURRENTLY AVAILABLE FOR FREELANCE WORK · PAKISTAN</p>
+        <div class="socials" aria-label="Social profiles">
+          <a class="social-btn" href="https://www.linkedin.com/in/syed-abdul-aleem-ahmad-shah/" target="_blank" rel="noopener"><span>LinkedIn</span> ↗</a>
+          <a class="social-btn" href="https://www.fiverr.com/syed_abdulaleem" target="_blank" rel="noopener"><span>Fiverr</span> ↗</a>
+          <a class="social-btn" href="https://www.upwork.com/freelancers/~01f0a36b29dbc41e22" target="_blank" rel="noopener"><span>Upwork</span> ↗</a>
+          <a class="social-btn" href="mailto:syedabdulaleem.ai@gmail.com"><span>Email</span> ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit" aria-hidden="true"></div>
+        <div class="hero-halo" aria-hidden="true"></div>
+        <div class="core">
+          <div class="profile-frame">
+            <img src="/assets/profile.jpg" alt="Syed Abdul Aleem Ahmad Shah — AI Developer from Pakistan" width="900" height="900" fetchpriority="high" />
+          </div>
+          <span class="profile-badge">AVAILABLE · 2026</span>
+        </div>
+        <span class="floating-tag tag-a">AI / BUILD</span>
+        <span class="floating-tag tag-b">SHIP IT ↗</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div>AI DEVELOPMENT · AUTOMATION · VIBE CODING · WEB DEVELOPMENT · E-COMMERCE · AI INTEGRATION · n8n · PRODUCT BUILDING · AI DEVELOPMENT · AUTOMATION · VIBE CODING ·</div></div>
+
+  <!-- ================= STATS ================= -->
+  <section class="section section-tight" aria-label="Highlights">
+    <div class="container grid grid-4 stats">
+      <div class="card stat reveal"><strong>5+</strong><span>Live projects shipped</span></div>
+      <div class="card stat reveal"><strong>9</strong><span>Services offered</span></div>
+      <div class="card stat reveal"><strong>2</strong><span>Certifications earned</span></div>
+      <div class="card stat reveal"><strong>100%</strong><span>Remote · Pakistan based</span></div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker">ABOUT / 01</div><h2>DEVELOPER BY CRAFT.<br /><span class="muted-h">BUILDER BY MINDSET.</span></h2></div>
+        <p class="section-intro">I am Syed Abdul Aleem Ahmad Shah, an independent developer from Pakistan focused on AI-powered development, automation, vibe coding and practical digital products.</p>
+      </div>
+      <div class="grid grid-2">
+        <article class="card reveal">
+          <h3>Building useful things, not just pretty screens</h3>
+          <p class="muted">My work sits where AI, automation, web development and real-world problem solving meet. I like taking an unclear idea, finding the simplest useful path forward, and turning it into something people can actually use.</p>
+          <p class="muted">I work independently and also own <a class="inline-link" href="https://www.zewarly.pk/" target="_blank" rel="noopener">Zewarly</a>, an e-commerce business. That experience keeps my development grounded in real decisions: customer experience, operations, content, reliability, digital workflows and what genuinely saves time.</p>
+          <p class="muted">My approach is straightforward: understand the problem, choose the right tools, build quickly, test carefully, ship confidently and improve from there.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">See My Work ↗</a>
+            <a class="btn btn-ghost" href="#contact">Hire Me</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="kicker">WHY ME</div>
+          <h3>More than a developer</h3>
+          <div class="mini-list">
+            <div><span class="card-num">01</span><h4>AI-First Thinking</h4><p class="muted">Using modern AI tools and workflows to accelerate ideas, research, products and problem solving.</p></div>
+            <div><span class="card-num">02</span><h4>Automation Mindset</h4><p class="muted">Finding repetitive work and turning it into smarter, connected workflows that save time.</p></div>
+            <div><span class="card-num">03</span><h4>Business Awareness</h4><p class="muted">Building with users, operations, reliability and real business outcomes in mind — not just appearance.</p></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker">WORK / 02</div><h2>SELECTED WORK.<br /><span class="muted-h">BUILT TO SHIP.</span></h2></div>
+        <p class="section-intro">Real projects, practical systems and live businesses — open them, explore them and see the work in motion.</p>
+      </div>
+
+      <article class="project card reveal">
+        <div class="project-media">
+          <a class="project-image-link" href="https://zorva-xi.vercel.app/" target="_blank" rel="noopener" aria-label="Open Zorva project">
+            <img class="project-image" src="/assets/zorva.jpg" alt="Zorva — live web project by Syed Abdul Aleem Ahmad Shah" width="1000" height="1000" loading="lazy" decoding="async" />
+            <span class="image-open">↗</span>
+          </a>
+          <span class="mini-note">PROJECT / 01 · FEATURED</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">Web Development · Featured · 2026</div>
+          <h3>Zorva</h3>
+          <p>A live web project designed, built and shipped end-to-end — modern interface, deployed on Vercel and ready for real users.</p>
+          <div class="tags"><span>Web Development</span><span>Vercel</span><span>Vibe Coding</span></div>
+          <a class="project-link" href="https://zorva-xi.vercel.app/" target="_blank" rel="noopener">Open Project ↗</a>
+        </div>
+      </article>
+
+      <article class="project card reveal">
+        <div class="project-media">
+          <a class="project-image-link" href="https://www.zewarly.pk/" target="_blank" rel="noopener" aria-label="Open Zewarly online store">
+            <img class="project-image" src="/assets/zewarly.jpg" alt="Zewarly — artificial jewellery e-commerce store in Pakistan" width="1000" height="666" loading="lazy" decoding="async" />
+            <span class="image-open">↗</span>
+          </a>
+          <span class="mini-note">PROJECT / 02 · MY OWN BUSINESS</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">E-commerce · WordPress / WooCommerce</div>
+          <h3>Zewarly — Artificial Jewellery Store</h3>
+          <p>My own e-commerce business: a WooCommerce store selling artificial jewellery across Pakistan, with a custom theme, complete on-page SEO, speed optimisation, a blog and nationwide delivery.</p>
+          <div class="tags"><span>WooCommerce</span><span>Custom Theme</span><span>SEO</span><span>E-commerce</span></div>
+          <a class="project-link" href="https://www.zewarly.pk/" target="_blank" rel="noopener">Open Store ↗</a>
+        </div>
+      </article>
+
+      <article class="project card reveal">
+        <div class="project-media">
+          <a class="project-image-link" href="https://roshanrestaurant.pk/" target="_blank" rel="noopener" aria-label="Open Roshan Restaurant website">
+            <img class="project-image" src="/assets/roshan.jpg" alt="Roshan Restaurant and Pizza Time website — digital menu with WhatsApp ordering, Dera Ismail Khan" width="900" height="983" loading="lazy" decoding="async" />
+            <span class="image-open">↗</span>
+          </a>
+          <span class="mini-note">PROJECT / 03 · CLIENT WORK</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">Business Website · Client Project</div>
+          <h3>Roshan Restaurant &amp; Pizza Time</h3>
+          <p>Website for a restaurant in Dera Ismail Khan with a full digital menu and one-tap WhatsApp ordering — customers browse the menu and order without any app.</p>
+          <div class="tags"><span>Restaurant Website</span><span>Digital Menu</span><span>WhatsApp Ordering</span></div>
+          <a class="project-link" href="https://roshanrestaurant.pk/" target="_blank" rel="noopener">Open Website ↗</a>
+        </div>
+      </article>
+
+      <article class="project card reveal">
+        <div class="project-media">
+          <a class="project-image-link" href="https://iphonesbyarbab.pk/" target="_blank" rel="noopener" aria-label="Open iPhones by Arbab website">
+            <img class="project-image" src="/assets/iphones.jpg" alt="iPhones by Arbab — premium used iPhones store website with PTA status and battery health details" width="900" height="983" loading="lazy" decoding="async" />
+            <span class="image-open">↗</span>
+          </a>
+          <span class="mini-note">PROJECT / 04 · CLIENT WORK</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">E-commerce Catalogue · Client Project</div>
+          <h3>iPhones by Arbab</h3>
+          <p>Store website for premium used iPhones — every device listed with verified battery health, storage, condition grading and PTA approval status, so buyers decide with full transparency.</p>
+          <div class="tags"><span>Product Catalogue</span><span>PTA Status</span><span>Battery Health</span></div>
+          <a class="project-link" href="https://iphonesbyarbab.pk/" target="_blank" rel="noopener">Open Website ↗</a>
+        </div>
+      </article>
+
+      <article class="project card reveal">
+        <div class="project-media">
+          <a class="project-image-link" href="#case-study" aria-label="Read the Zewarly automation case study">
+            <img class="project-image wide" src="/assets/zewarly-automation.jpg" alt="Zewarly social media automation — n8n workflow connecting WooCommerce, Gemini AI and Meta APIs" width="1257" height="355" loading="lazy" decoding="async" />
+            <span class="image-open">↓</span>
+          </a>
+          <span class="mini-note">PROJECT / 05 · AI AUTOMATION</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">AI Automation · n8n · 2026</div>
+          <h3>Zewarly Social Media Automation</h3>
+          <p>A real-world n8n automation that retrieves Zewarly WooCommerce products, processes the data, generates social-media content with Gemini AI and publishes it to Facebook and Instagram.</p>
+          <div class="tags"><span>n8n</span><span>Gemini AI</span><span>WooCommerce</span><span>JavaScript</span><span>Meta API</span></div>
+          <a class="project-link" href="#case-study">View Case Study ↓</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CASE STUDY ================= -->
+  <section class="section" id="case-study">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker">CASE STUDY / 03</div><h2>ZEWARLY SOCIAL<br /><span class="muted-h">MEDIA AUTOMATION.</span></h2></div>
+        <p class="section-intro">From product catalog to social media — one connected workflow instead of hours of repetitive manual posting.</p>
+      </div>
+      <div class="card reveal">
+        <p class="muted big">Product-based social content used to need the same manual steps every time: select a product, collect its name, description, URL and image, write the copy, then prepare posts for each platform. This automation connects all of those stages inside n8n.</p>
+        <div class="case-image"><img src="/assets/n8n-workflow.jpg" alt="Complete n8n workflow for Zewarly social media automation" width="1257" height="355" loading="lazy" decoding="async" /></div>
+        <div class="flow" role="list" aria-label="Automation flow">
+          <span role="listitem">WooCommerce</span><b>→</b><span role="listitem">Google Sheets</span><b>→</b><span role="listitem">JavaScript</span><b>→</b><span role="listitem">Limit</span><b>→</b><span role="listitem">Product Image</span><b>→</b><span role="listitem">Gemini AI</span><b>→</b><span role="listitem">Facebook</span><b>→</b><span role="listitem">Instagram</span>
+        </div>
+        <div class="grid grid-3 case-points">
+          <div><h4>AI that writes for the product</h4><p class="muted">Gemini receives the real product name, description and URL — it never invents product information — and returns a hook, product-focused copy, a call to action and hashtags.</p></div>
+          <div><h4>Business value</h4><p class="muted">Less repetitive work, consistent formatting, and a process that scales with a larger catalog while the Limit node controls how much is processed.</p></div>
+          <div><h4>Real challenges solved</h4><p class="muted">Meta app permissions, developer-role configuration, authentication and expired access tokens were diagnosed and fixed during development.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker">SERVICES / 04</div><h2>PROBLEMS FIRST.<br /><span class="muted-h">TECHNOLOGY SECOND.</span></h2></div>
+        <p class="section-intro">Practical digital solutions designed around a real problem, a clear workflow and a useful outcome — not a buzzword list.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card service reveal"><span class="card-num">01</span><h3>AI-Powered Web Development</h3><p>Modern websites built faster and smarter with AI-assisted development — without compromising quality or performance.</p></article>
+        <article class="card service reveal"><span class="card-num">02</span><h3>AI Automation &amp; Workflows</h3><p>Connected workflows that remove repetitive manual work from your business and run the same way every time.</p></article>
+        <article class="card service reveal"><span class="card-num">03</span><h3>n8n Automation</h3><p>Custom n8n workflows linking your store, spreadsheets, AI models and social platforms into one system.</p></article>
+        <article class="card service reveal"><span class="card-num">04</span><h3>Full-Stack Web Development</h3><p>Complete websites and web apps — front-end, back-end logic and deployment, handled end-to-end.</p></article>
+        <article class="card service reveal"><span class="card-num">05</span><h3>E-commerce Development</h3><p>Online stores that are easy to manage and easy to buy from — product catalogs, WhatsApp ordering and payments.</p></article>
+        <article class="card service reveal"><span class="card-num">06</span><h3>Vibe Coding</h3><p>Rapid product building with AI pair-programming: idea to working prototype to shipped product, fast.</p></article>
+        <article class="card service reveal"><span class="card-num">07</span><h3>AI Integration</h3><p>Add AI features to existing products — content generation, chat, image and video workflows powered by modern models.</p></article>
+        <article class="card service reveal"><span class="card-num">08</span><h3>WordPress / WooCommerce</h3><p>Custom WordPress and WooCommerce builds with SEO, speed optimisation and clean, manageable structure.</p></article>
+        <article class="card service reveal"><span class="card-num">09</span><h3>Custom Business Solutions</h3><p>Digital menus, catalogues, ordering systems and internal tools shaped around how your business actually works.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker">SKILLS / 05</div><h2>TOOLS ARE USEFUL<br /><span class="muted-h">WHEN THEY SHIP.</span></h2></div>
+        <p class="section-intro">A practical toolkit spanning AI, automation, web development, creative technology and research.</p>
+      </div>
+      <div class="skill-list">
+        <div class="skill-group reveal"><div class="skill-title"><span>01</span><h3>Artificial Intelligence &amp; Generative AI</h3></div><div class="chips"><span>Generative AI</span><span>LLMs</span><span>Prompt Engineering</span><span>AI-powered Content Creation</span><span>AI Image Generation</span><span>AI Video Generation</span></div></div>
+        <div class="skill-group reveal"><div class="skill-title"><span>02</span><h3>AI Automation</h3></div><div class="chips"><span>n8n</span><span>AI Workflow Automation</span><span>Intelligent Workflows</span><span>Content Automation</span></div></div>
+        <div class="skill-group reveal"><div class="skill-title"><span>03</span><h3>Web Development</h3></div><div class="chips"><span>HTML5</span><span>CSS3 &amp; Animations</span><span>JavaScript</span><span>WordPress</span><span>WooCommerce</span><span>Responsive Design</span><span>SEO</span></div></div>
+        <div class="skill-group reveal"><div class="skill-title"><span>04</span><h3>AI App Development / Vibe Coding</h3></div><div class="chips"><span>Vibe Coding</span><span>AI-powered Web Applications</span><span>AI Productivity Tools</span><span>Vercel Deployment</span></div></div>
+        <div class="skill-group reveal"><div class="skill-title"><span>05</span><h3>AI Creative Technology</h3></div><div class="chips"><span>AI Image Generation</span><span>AI Video Generation</span><span>AI-assisted Presentations</span><span>Digital Content Creation</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker">EXPERIENCE / 06</div><h2>FROM IDEA<br /><span class="muted-h">TO LAUNCH.</span></h2></div>
+        <p class="section-intro">An independent developer path built around learning fast, shipping real work and understanding digital products from both sides of the screen.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="reveal">
+          <div class="timeline">
+            <div class="timeline-item"><span>CURRENT</span><h3>Freelance / Independent Developer</h3><p>Building websites, AI-powered solutions, automations and digital experiences for practical use — for my own products and for clients.</p></div>
+            <div class="timeline-item"><span>OWNER</span><h3>Zewarly — E-commerce</h3><p>Owner of an online e-commerce business, connecting development with real business operations.</p><a class="project-link" href="https://www.zewarly.pk/" target="_blank" rel="noopener">Explore Zewarly ↗</a></div>
+          </div>
+          <div class="card cert reveal">
+            <div class="card-num">2026 · AI</div>
+            <h3>ACT AI — National AI Training Program</h3>
+            <p class="muted">Eight-week training covering AI foundations, generative AI, agentic AI, AI tools &amp; productivity, and freelancing with AI.</p>
+            <img src="/assets/cert-act-ai.jpg" alt="ACT AI — National AI Training Program certificate of Syed Abdul Aleem Ahmad Shah" width="1100" height="750" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div>
+          <div class="card reveal">
+            <div class="kicker">REAL-WORLD LENS</div>
+            <h3>Code meets business</h3>
+            <p class="muted">Owning an e-commerce business means thinking about more than how something looks. It means thinking about customers, operations, conversions, content, reliability and what actually saves time.</p>
+          </div>
+          <div class="card cert reveal">
+            <div class="card-num">WEB DEVELOPMENT</div>
+            <h3>Web Development Course</h3>
+            <p class="muted">CodeLab Computer Science Skill Development Academy — HTML5, CSS3 animations, JavaScript and web development.</p>
+            <img src="/assets/cert-web-dev.jpg" alt="Web development certificate of Syed Abdul Aleem Ahmad Shah — CodeLab Computer Science Skill Development Academy" width="1100" height="816" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </div>
+      <div class="section-head reveal process-head">
+        <div><div class="kicker">PROCESS</div><h2>HOW I WORK.</h2></div>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal"><span class="card-num">01</span><h3>Understand</h3><p>Clarify the problem, audience and desired outcome.</p></div>
+        <div class="card reveal"><span class="card-num">02</span><h3>Plan</h3><p>Choose the right tools, architecture and AI approach.</p></div>
+        <div class="card reveal"><span class="card-num">03</span><h3>Build</h3><p>Turn the idea into a working product or workflow.</p></div>
+        <div class="card reveal"><span class="card-num">04</span><h3>Test</h3><p>Refine functionality, UX and reliability.</p></div>
+        <div class="card reveal"><span class="card-num">05</span><h3>Deploy</h3><p>Ship the solution to a real production environment.</p></div>
+        <div class="card reveal"><span class="card-num">06</span><h3>Improve</h3><p>Keep learning from usage and make the solution better.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker">FAQ / 07</div><h2>COMMON<br /><span class="muted-h">QUESTIONS.</span></h2></div>
+      </div>
+      <div class="faq-list">
+        <details class="card reveal"><summary>What services do you offer?</summary><p class="muted">AI-powered web development, full-stack websites, e-commerce stores (WordPress / WooCommerce), n8n automation workflows, AI integration and custom business solutions like digital menus and WhatsApp ordering systems.</p></details>
+        <details class="card reveal"><summary>Are you available for freelance work?</summary><p class="muted">Yes — I am currently available for freelance projects worldwide. Reach me fastest on WhatsApp at +92 329 5566111, or via Fiverr, Upwork, LinkedIn or email.</p></details>
+        <details class="card reveal"><summary>Where are you based?</summary><p class="muted">I am based in Pakistan and work remotely with local and international clients.</p></details>
+        <details class="card reveal"><summary>How much does a project cost?</summary><p class="muted">Every project is different, so pricing is quoted per project after a short discussion of your requirements. Message me on WhatsApp with your idea and I will give you a clear, honest quote.</p></details>
+        <details class="card reveal"><summary>What technologies do you work with?</summary><p class="muted">Generative AI and LLMs, n8n, HTML5, CSS3, JavaScript, WordPress, WooCommerce, Gemini AI, Meta APIs and Vercel — chosen around the outcome, not buzzwords.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="kicker">LET'S BUILD</div>
+        <h2>HAVE AN IDEA?<br /><span>LET'S MAKE IT REAL.</span></h2>
+        <p>Website, AI feature, automation or digital product — tell me what you want to build and let's turn it into something useful.</p>
+        <div class="hero-actions center">
+          <a class="btn btn-primary" href="https://wa.me/923295566111?text=Assalam-o-Alaikum%20Aleem%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp: 0329 5566111 ↗</a>
+          <a class="btn btn-ghost" href="mailto:syedabdulaleem.ai@gmail.com">✉ Email Me</a>
+        </div>
+      </div>
+      <div class="grid grid-2 contact-grid">
+        <article class="card reveal">
+          <div class="kicker">HIRE ME</div>
+          <a class="contact-email" href="mailto:syedabdulaleem.ai@gmail.com">syedabdulaleem.ai@gmail.com</a>
+          <p class="muted">Currently available for freelance work. Choose a platform below, WhatsApp me, or email me directly.</p>
+          <div class="socials wrap">
+            <a class="social-btn" href="https://www.linkedin.com/in/syed-abdul-aleem-ahmad-shah/" target="_blank" rel="noopener"><span>LinkedIn</span> ↗</a>
+            <a class="social-btn" href="https://www.fiverr.com/syed_abdulaleem" target="_blank" rel="noopener"><span>Fiverr</span> ↗</a>
+            <a class="social-btn" href="https://www.upwork.com/freelancers/~01f0a36b29dbc41e22" target="_blank" rel="noopener"><span>Upwork</span> ↗</a>
+            <a class="social-btn" href="https://wa.me/923295566111" target="_blank" rel="noopener"><span>WhatsApp</span> ↗</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="kicker">START A CONVERSATION</div>
+          <form class="form" id="contactForm">
+            <label class="sr-only" for="fName">Your name</label>
+            <input id="fName" name="name" type="text" placeholder="YOUR NAME" autocomplete="name" />
+            <label class="sr-only" for="fSubject">Project / subject</label>
+            <input id="fSubject" name="subject" type="text" placeholder="PROJECT / SUBJECT" required />
+            <label class="sr-only" for="fMessage">Your message</label>
+            <textarea id="fMessage" name="message" rows="5" placeholder="TELL ME WHAT YOU WANT TO BUILD..." required></textarea>
+            <button class="btn btn-primary" type="submit">Send via WhatsApp ↗</button>
+          </form>
+          <p class="notice">This form opens WhatsApp with your message ready to send — no backend required.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <strong>SYED ABDUL ALEEM AHMAD SHAH</strong><br />
+      <span>AI DEVELOPER · AUTOMATION SPECIALIST · VIBE CODER</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <div>© 2026 · BUILT WITH CURIOSITY &amp; CODE · PAKISTAN</div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/923295566111?text=Assalam-o-Alaikum%20Aleem%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.26-1.62.5-.9.5-1.67.35-1.83-.15-.16-.55-.26-.85-.41ZM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.82 9.82 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.89c0 5.45-4.44 9.88-9.89 9.88Zm8.42-18.3A11.82 11.82 0 0 0 12.04 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.87 11.87 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.47-8.41Z"/></svg>
+</a>
+
+<script src="/script.js" defer></script>
+</body>
 </html>
