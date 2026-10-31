@@ -291,3 +291,6 @@ h1 em,h2 em{font-style:italic;color:var(--green)}
   .did-grid{grid-template-columns:1fr}
   .project-gallery{grid-template-columns:1fr}
 }
+.project-video{margin:0 0 22px;text-align:center}
+.project-video video{height:min(540px,120vw);width:auto;max-width:100%;border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow);background:#000}
+.project-video figcaption{font-size:.83rem;color:var(--muted);margin-top:8px}
